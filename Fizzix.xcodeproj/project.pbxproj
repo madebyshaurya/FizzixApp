@@ -11,6 +11,20 @@
 		D91F90C82C0A6891009F7306 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91F90C72C0A6891009F7306 /* ContentView.swift */; };
 		D91F90CA2C0A6893009F7306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91F90C92C0A6893009F7306 /* Assets.xcassets */; };
 		D91F90CD2C0A6893009F7306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91F90CC2C0A6893009F7306 /* Preview Assets.xcassets */; };
+		D9E63FB22C0A6CEB00242310 /* RoundedCross.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FB12C0A6CEB00242310 /* RoundedCross.swift */; };
+		D9E63FB42C0A6D0400242310 /* SlimRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FB32C0A6D0400242310 /* SlimRectangle.swift */; };
+		D9E63FB72C0A6D1700242310 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FB62C0A6D1700242310 /* Triangle.swift */; };
+		D9E63FB92C0A6D3300242310 /* ConfettiSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FB82C0A6D3300242310 /* ConfettiSwiftUI.swift */; };
+		D9E63FBB2C0A6D5000242310 /* View+ConfettiCanon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FBA2C0A6D5000242310 /* View+ConfettiCanon.swift */; };
+		D9E63FBE2C0A6DF000242310 /* Law1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FBD2C0A6DF000242310 /* Law1.swift */; };
+		D9E63FC02C0A6E1100242310 /* Law2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FBF2C0A6E1100242310 /* Law2.swift */; };
+		D9E63FC22C0A6E1D00242310 /* Law3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FC12C0A6E1D00242310 /* Law3.swift */; };
+		D9E63FC42C0A6E3000242310 /* NewtonsCradle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FC32C0A6E3000242310 /* NewtonsCradle.swift */; };
+		D9E63FC72C0A6E8200242310 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FC62C0A6E8200242310 /* Credits.swift */; };
+		D9E63FC92C0A6E9600242310 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FC82C0A6E9600242310 /* HomeView.swift */; };
+		D9E63FCB2C0A6EB200242310 /* PickLawOfMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FCA2C0A6EB100242310 /* PickLawOfMotionView.swift */; };
+		D9E63FCD2C0A6EC000242310 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FCC2C0A6EC000242310 /* QuizView.swift */; };
+		D9E63FCF2C0A6EEB00242310 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E63FCE2C0A6EEB00242310 /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +33,20 @@
 		D91F90C72C0A6891009F7306 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D91F90C92C0A6893009F7306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D91F90CC2C0A6893009F7306 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9E63FB12C0A6CEB00242310 /* RoundedCross.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCross.swift; sourceTree = "<group>"; };
+		D9E63FB32C0A6D0400242310 /* SlimRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimRectangle.swift; sourceTree = "<group>"; };
+		D9E63FB62C0A6D1700242310 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		D9E63FB82C0A6D3300242310 /* ConfettiSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiSwiftUI.swift; sourceTree = "<group>"; };
+		D9E63FBA2C0A6D5000242310 /* View+ConfettiCanon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ConfettiCanon.swift"; sourceTree = "<group>"; };
+		D9E63FBD2C0A6DF000242310 /* Law1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Law1.swift; sourceTree = "<group>"; };
+		D9E63FBF2C0A6E1100242310 /* Law2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Law2.swift; sourceTree = "<group>"; };
+		D9E63FC12C0A6E1D00242310 /* Law3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Law3.swift; sourceTree = "<group>"; };
+		D9E63FC32C0A6E3000242310 /* NewtonsCradle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtonsCradle.swift; sourceTree = "<group>"; };
+		D9E63FC62C0A6E8200242310 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		D9E63FC82C0A6E9600242310 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D9E63FCA2C0A6EB100242310 /* PickLawOfMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickLawOfMotionView.swift; sourceTree = "<group>"; };
+		D9E63FCC2C0A6EC000242310 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		D9E63FCE2C0A6EEB00242310 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +79,12 @@
 		D91F90C42C0A6891009F7306 /* Fizzix */ = {
 			isa = PBXGroup;
 			children = (
+				D9E63FC52C0A6E7500242310 /* Views */,
+				D9E63FBC2C0A6D6400242310 /* LawView */,
+				D9E63FAF2C0A6CAA00242310 /* Confetti */,
 				D91F90C52C0A6891009F7306 /* FizzixApp.swift */,
 				D91F90C72C0A6891009F7306 /* ContentView.swift */,
+				D9E63FCE2C0A6EEB00242310 /* PlaySound.swift */,
 				D91F90C92C0A6893009F7306 /* Assets.xcassets */,
 				D91F90CB2C0A6893009F7306 /* Preview Content */,
 			);
@@ -65,6 +97,48 @@
 				D91F90CC2C0A6893009F7306 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9E63FAF2C0A6CAA00242310 /* Confetti */ = {
+			isa = PBXGroup;
+			children = (
+				D9E63FB02C0A6CDC00242310 /* Shapes */,
+				D9E63FB82C0A6D3300242310 /* ConfettiSwiftUI.swift */,
+				D9E63FBA2C0A6D5000242310 /* View+ConfettiCanon.swift */,
+			);
+			path = Confetti;
+			sourceTree = "<group>";
+		};
+		D9E63FB02C0A6CDC00242310 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				D9E63FB12C0A6CEB00242310 /* RoundedCross.swift */,
+				D9E63FB32C0A6D0400242310 /* SlimRectangle.swift */,
+				D9E63FB62C0A6D1700242310 /* Triangle.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		D9E63FBC2C0A6D6400242310 /* LawView */ = {
+			isa = PBXGroup;
+			children = (
+				D9E63FBD2C0A6DF000242310 /* Law1.swift */,
+				D9E63FBF2C0A6E1100242310 /* Law2.swift */,
+				D9E63FC12C0A6E1D00242310 /* Law3.swift */,
+				D9E63FC32C0A6E3000242310 /* NewtonsCradle.swift */,
+			);
+			path = LawView;
+			sourceTree = "<group>";
+		};
+		D9E63FC52C0A6E7500242310 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9E63FC62C0A6E8200242310 /* Credits.swift */,
+				D9E63FC82C0A6E9600242310 /* HomeView.swift */,
+				D9E63FCA2C0A6EB100242310 /* PickLawOfMotionView.swift */,
+				D9E63FCC2C0A6EC000242310 /* QuizView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +211,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E63FB42C0A6D0400242310 /* SlimRectangle.swift in Sources */,
 				D91F90C82C0A6891009F7306 /* ContentView.swift in Sources */,
+				D9E63FCD2C0A6EC000242310 /* QuizView.swift in Sources */,
+				D9E63FC92C0A6E9600242310 /* HomeView.swift in Sources */,
+				D9E63FBE2C0A6DF000242310 /* Law1.swift in Sources */,
+				D9E63FB72C0A6D1700242310 /* Triangle.swift in Sources */,
+				D9E63FC22C0A6E1D00242310 /* Law3.swift in Sources */,
+				D9E63FC42C0A6E3000242310 /* NewtonsCradle.swift in Sources */,
+				D9E63FBB2C0A6D5000242310 /* View+ConfettiCanon.swift in Sources */,
+				D9E63FCF2C0A6EEB00242310 /* PlaySound.swift in Sources */,
+				D9E63FB22C0A6CEB00242310 /* RoundedCross.swift in Sources */,
 				D91F90C62C0A6891009F7306 /* FizzixApp.swift in Sources */,
+				D9E63FC02C0A6E1100242310 /* Law2.swift in Sources */,
+				D9E63FC72C0A6E8200242310 /* Credits.swift in Sources */,
+				D9E63FB92C0A6D3300242310 /* ConfettiSwiftUI.swift in Sources */,
+				D9E63FCB2C0A6EB200242310 /* PickLawOfMotionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shauryagupta.Fizzix;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shauryagupta.FizzixApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -321,7 +409,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shauryagupta.Fizzix;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shauryagupta.FizzixApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

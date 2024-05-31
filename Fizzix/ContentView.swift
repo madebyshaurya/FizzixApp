@@ -6,19 +6,29 @@
 //
 
 import SwiftUI
+import CoreText
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ZStack {
+                Color(.white)
+                    .ignoresSafeArea(.all)
+                Image("bg")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea(.all)
+                    .opacity(0.1)
+                    HomeView()
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
 }
+
+
+
