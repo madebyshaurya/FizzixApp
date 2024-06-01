@@ -23,7 +23,7 @@ public class NewtonsCradle: UIView {
         
         self.law3View = law3View
         
-        super.init(frame: CGRect(x: 0, y: 0, width: 500, height: 350))
+        super.init(frame: CGRect(x: 0, y: 0, width: 350, height: 320))
         backgroundColor = UIColor.white
         
         animator = UIDynamicAnimator(referenceView: self)

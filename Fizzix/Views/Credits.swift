@@ -166,7 +166,11 @@ struct Credits: View {
                 }
             }
         default:
-            Text("Default")
+            VStack {
+                Image(systemName: "xmark.circle")
+                Text("Device Not Supported")
+                    .foregroundStyle(.red)
+            }
         }
     }
 }
