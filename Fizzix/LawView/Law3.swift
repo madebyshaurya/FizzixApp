@@ -282,6 +282,7 @@ struct Law3: View {
                             
                         }
                 }
+                .padding(.trailing, biggerCard ? 30 : 0)
                 
             default:
                 VStack {

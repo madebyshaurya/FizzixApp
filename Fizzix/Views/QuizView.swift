@@ -53,62 +53,133 @@ struct QuizView: View {
     ]
     
     var body: some View {
-        if quizFinished {
-            QuizFinishedView(quizFinished: $quizFinished, currentIndex: $currentQuestionIndex, correctQuestion: $correctQuestions, correctPercentage: calculatePercentage())
-        } else {
-            VStack {
-                ZStack {
-                    Color.white
-                        .ignoresSafeArea(.all)
-                    Image("bg2")
-                        .resizable()
-                        .scaledToFill()
-                        .edgesIgnoringSafeArea(.all)
-                        .opacity(0.1)
-                    VStack {
-                        ProgressView(value: Double(currentQuestionIndex + 1), total: Double(questions.count)).animation(.easeIn(duration: 3), value: currentQuestionIndex)
-                            .scaleEffect(x: 1, y: 4, anchor: .center)
-                        
-                        Text(questions[currentQuestionIndex].text)
-                            .font(.custom("KleeOne-Regular", size: 30))
-                            .foregroundColor(.black)
-                            .padding()
-                        
-                        if !quizFinished {
-                            ForEach(0..<questions[currentQuestionIndex].options.count, id: \.self) { index in
+        switch UIDevice.current.userInterfaceIdiom {
+        case .pad:
+            if quizFinished {
+                QuizFinishedView(quizFinished: $quizFinished, currentIndex: $currentQuestionIndex, correctQuestion: $correctQuestions, correctPercentage: calculatePercentage())
+            } else {
+                VStack {
+                    ZStack {
+                        Color.white
+                            .ignoresSafeArea(.all)
+                        Image("bg2")
+                            .resizable()
+                            .scaledToFill()
+                            .edgesIgnoringSafeArea(.all)
+                            .opacity(0.1)
+                        VStack {
+                            ProgressView(value: Double(currentQuestionIndex + 1), total: Double(questions.count)).animation(.easeIn(duration: 3), value: currentQuestionIndex)
+                                .scaleEffect(x: 1, y: 4, anchor: .center)
+                            
+                            Text(questions[currentQuestionIndex].text)
+                                .font(.custom("KleeOne-Regular", size: 30))
+                                .foregroundColor(.black)
+                                .padding()
+                            
+                            if !quizFinished {
+                                ForEach(0..<questions[currentQuestionIndex].options.count, id: \.self) { index in
+                                    Button(action: {
+                                        self.selectedOptionIndex = index
+                                    }) {
+                                        Text(self.questions[self.currentQuestionIndex].options[index])
+                                            .padding()
+                                            .frame(maxWidth: .infinity)
+                                            .background(self.selectedOptionIndex == index ? Color.blue : Color.gray.opacity(0.7))
+                                            .foregroundColor(.white)
+                                            .cornerRadius(10)
+                                            .padding(.horizontal)
+                                            .font(.custom("KleeOne-Regular", size: 30))
+                                    }
+                                    .padding(.bottom, 10)
+                                }
+                                
                                 Button(action: {
-                                    self.selectedOptionIndex = index
+                                    self.checkAnswer()
                                 }) {
-                                    Text(self.questions[self.currentQuestionIndex].options[index])
+                                    Text("Next")
                                         .padding()
                                         .frame(maxWidth: .infinity)
-                                        .background(self.selectedOptionIndex == index ? Color.blue : Color.gray.opacity(0.7))
+                                        .background(Color.green)
+                                        .font(.custom("KleeOne-Regular", size: 30))
                                         .foregroundColor(.white)
                                         .cornerRadius(10)
                                         .padding(.horizontal)
-                                        .font(.custom("KleeOne-Regular", size: 30))
                                 }
-                                .padding(.bottom, 10)
+                                .disabled(self.selectedOptionIndex == nil)
+                                .opacity(self.selectedOptionIndex == nil ? 0.6 : 1.0)
                             }
-                            
-                            Button(action: {
-                                self.checkAnswer()
-                            }) {
-                                Text("Next")
-                                    .padding()
-                                    .frame(maxWidth: .infinity)
-                                    .background(Color.green)
-                                    .font(.custom("KleeOne-Regular", size: 30))
-                                    .foregroundColor(.white)
-                                    .cornerRadius(10)
-                                    .padding(.horizontal)
-                            }
-                            .disabled(self.selectedOptionIndex == nil)
-                            .opacity(self.selectedOptionIndex == nil ? 0.6 : 1.0)
                         }
+                        .padding(.horizontal, 150)
                     }
-                    .padding(.horizontal, 150)
                 }
+            }
+            
+        case .phone:
+            if quizFinished {
+                QuizFinishedView(quizFinished: $quizFinished, currentIndex: $currentQuestionIndex, correctQuestion: $correctQuestions, correctPercentage: calculatePercentage())
+            } else {
+                VStack {
+                    ZStack {
+                        Color.white
+                            .ignoresSafeArea(.all)
+                        Image("bg2")
+                            .resizable()
+                            .scaledToFill()
+                            .edgesIgnoringSafeArea(.all)
+                            .opacity(0.1)
+                        VStack {
+                            ProgressView(value: Double(currentQuestionIndex + 1), total: Double(questions.count)).animation(.easeIn(duration: 3), value: currentQuestionIndex)
+                                .scaleEffect(x: 0.8, y: 4, anchor: .center)
+                            
+                            Text(questions[currentQuestionIndex].text)
+                                .font(.custom("KleeOne-Regular", size: 25))
+                                .frame(width: 350)
+                                .foregroundColor(.black)
+                                .padding()
+                            
+                            if !quizFinished {
+                                ForEach(0..<questions[currentQuestionIndex].options.count, id: \.self) { index in
+                                    Button(action: {
+                                        self.selectedOptionIndex = index
+                                    }) {
+                                        Text(self.questions[self.currentQuestionIndex].options[index])
+                                            .padding()
+                                            .frame(maxWidth: 350)
+                                            .background(self.selectedOptionIndex == index ? Color.blue : Color.gray.opacity(0.7))
+                                            .foregroundColor(.white)
+                                            .cornerRadius(10)
+                                            .padding(.horizontal)
+                                            .font(.custom("KleeOne-Regular", size: 25))
+                                    }
+                                    .padding(.bottom, 10)
+                                }
+                                
+                                Button(action: {
+                                    self.checkAnswer()
+                                }) {
+                                    Text("Next")
+                                        .padding()
+                                        .frame(maxWidth: 350)
+                                        .background(Color.green)
+                                        .font(.custom("KleeOne-Regular", size: 30))
+                                        .foregroundColor(.white)
+                                        .cornerRadius(10)
+                                        .padding(.horizontal)
+                                }
+                                .disabled(self.selectedOptionIndex == nil)
+                                .opacity(self.selectedOptionIndex == nil ? 0.6 : 1.0)
+                            }
+                        }
+                        .padding(.horizontal, 150)
+                    }
+                }
+            }
+            
+        default:
+            VStack {
+                Image(systemName: "xmark.circle")
+                Text("Device Not Supported")
+                    .foregroundStyle(.red)
             }
         }
     }
@@ -140,6 +211,10 @@ struct QuizView: View {
         guard !questions.isEmpty else { return 0 }
         return (correctQuestions * 100) / questions.count
     }
+}
+
+#Preview {
+    QuizView()
 }
 
 struct QuizFinishedView: View {
@@ -200,3 +275,4 @@ struct QuizFinishedView: View {
         }
     }
 }
+

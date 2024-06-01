@@ -195,7 +195,6 @@ struct Law2: View {
                                 .frame(width: 300)
                                 .foregroundColor(.white)
                                 .font(.custom("KleeOne-Regular", size: 23))
-                                .padding(.horizontal, 15)
                                 .padding(7)
                                 .padding(.bottom, biggerCard ? 30 : 10)
                             
@@ -281,6 +280,7 @@ struct Law2: View {
                             
                         }
                 }
+                .padding(.trailing, biggerCard ? 30 : 0)
             }
             
         default:

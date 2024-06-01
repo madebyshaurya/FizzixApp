@@ -316,6 +316,7 @@ struct Law1: View {
                             
                         }
                 }
+                .padding(.trailing, biggerCard ? 30 : 0)
             }
 
             
