@@ -1,7 +1,7 @@
 import UIKit
 
 public class NewtonsCradle: UIView {
-    
+    let cradleFrame: CGRect;
     let law3View: Law3?
     
     private let colors: [UIColor]
@@ -15,15 +15,17 @@ public class NewtonsCradle: UIView {
     public let gravityBehavior: UIGravityBehavior
     public let itemBehavior: UIDynamicItemBehavior
     
- init(colors: [UIColor], law3View: Law3?) {
+    init(colors: [UIColor], law3View: Law3?, cradleFrame: CGRect) {
         self.colors = colors
         collisionBehavior = UICollisionBehavior(items: [])
         gravityBehavior = UIGravityBehavior(items: [])
         itemBehavior = UIDynamicItemBehavior(items: [])
+        self.cradleFrame = cradleFrame
         
         self.law3View = law3View
+
         
-        super.init(frame: CGRect(x: 0, y: 0, width: 350, height: 320))
+     super.init(frame: cradleFrame)
         backgroundColor = UIColor.white
         
         animator = UIDynamicAnimator(referenceView: self)

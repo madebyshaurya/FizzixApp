@@ -60,7 +60,7 @@ struct Law3: View {
                         .foregroundStyle(.black)
                         .font(.custom("RubikDoodleShadow-Regular", size: 65))
                     
-                    SpriteView(scene: GameScene3(size: CGSize(width: 500, height: 350), law3View: self))
+                    SpriteView(scene: GameScene3(size: CGSize(width: 500, height: 350), law3View: self, cradleFrame: CGRect(x: 0, y: 0, width: 500, height: 350)))
                         .frame(width: 500, height: 350)
                         .edgesIgnoringSafeArea(.all)
                         .cornerRadius(10)
@@ -175,7 +175,7 @@ struct Law3: View {
                         .foregroundStyle(.black)
                         .font(.custom("RubikDoodleShadow-Regular", size: 65))
                     
-                    SpriteView(scene: GameScene3(size: CGSize(width: 350, height: 320), law3View: self))
+                    SpriteView(scene: GameScene3(size: CGSize(width: 350, height: 320), law3View: self, cradleFrame: CGRect(x: 0, y: 0, width: 350, height: 320)))
                         .frame(width: 350, height: 320)
                         .edgesIgnoringSafeArea(.all)
                         .cornerRadius(10)

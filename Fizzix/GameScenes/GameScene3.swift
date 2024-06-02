@@ -13,9 +13,11 @@ import GameplayKit
 class GameScene3: SKScene {
     
     private var law3View: Law3?
+    let cradleFrame: CGRect;
     
-    init(size: CGSize ,law3View: Law3?) {
+    init(size: CGSize ,law3View: Law3?, cradleFrame: CGRect) {
         self.law3View = law3View
+        self.cradleFrame = cradleFrame
         super.init(size: size)
     }
     
@@ -31,7 +33,7 @@ class GameScene3: SKScene {
             UIColor(red: 0.2202886641025543, green: 0.7022308707237244, blue: 0.9593387842178345, alpha: 1),
             UIColor(red: 0.9166661500930786, green: 0.4121252298355103, blue: 0.2839399874210358, alpha: 1),
             UIColor(red: 0.521954357624054, green: 0.7994346618652344, blue: 0.3460423350334167, alpha: 1)
-        ], law3View: law3View)
+        ], law3View: law3View, cradleFrame: cradleFrame)
         
         newtonsCradle?.ballSize = CGSize(width: 60, height: 60)
         newtonsCradle?.ballPadding = 2.0
