@@ -15,7 +15,7 @@ struct Law2: View {
         "Experiment with the values above 👆, try entering something like 20N and 10kg (don't write the unit).",
         "You did it again! A pat on the back for learning about Newton's 2nd Law of Motion! 🎉"
     ]
-        
+    
     @State var rightButtonDisabled = false
     @State var leftButtonDisabled = true
     @State var checkForCompletion = false
@@ -79,7 +79,7 @@ struct Law2: View {
                                 .padding(.horizontal, 15)
                                 .padding(7)
                                 .padding(.bottom, biggerCard ? 30 : 10)
-    //                            .padding(.bottom, instructionNum == 3 ? 30 : 0)
+                            //                            .padding(.bottom, instructionNum == 3 ? 30 : 0)
                             
                             Button {
                                 

@@ -149,7 +149,7 @@ struct Law3: View {
                             .opacity(navigationButtonsVisible ? 1 : 0)
                             .disabled(!navigationButtonsVisible)
                             
-
+                            
                             Button(action: {
                                 presentationMode.wrappedValue.dismiss()
                                 pickLawOfMotionView.currentIndex = 1
@@ -265,7 +265,7 @@ struct Law3: View {
                             .opacity(navigationButtonsVisible ? 1 : 0)
                             .disabled(!navigationButtonsVisible)
                             
-
+                            
                             Button(action: {
                                 presentationMode.wrappedValue.dismiss()
                                 pickLawOfMotionView.currentIndex = 1

@@ -3,6 +3,7 @@ import AVFoundation
 
 struct HomeView: View {
     @State var soundStopped = false
+    @State var soundPlayed = false
     init() {
         // Register the first custom font
         if let fontURL = Bundle.main.url(forResource: "RubikDoodleShadow-Regular", withExtension: "ttf"),
@@ -218,7 +219,10 @@ struct HomeView: View {
             }
             .onAppear(perform: {
                 if !soundStopped {
-                    playSound(sound: "bgmusic", type: "mp3", volume: 0.4, loop: -1)
+                    if soundPlayed == false {
+                        playSound(sound: "bgmusic", type: "mp3", volume: 0.4, loop: -1)
+                        soundPlayed = true
+                    }
                 }
             })
             
@@ -232,3 +236,6 @@ struct HomeView: View {
     }
 }
 
+#Preview {
+    HomeView()
+}
